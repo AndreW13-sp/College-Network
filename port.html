@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Port.css">
+  
+  <!-- <link rel="stylesheet" href="drop.css"> -->
+<!-- <link rel="stylesheet" href="action.css"> -->
+<script src="https://kit.fontawesome.com/072545c881.js" crossorigin="anonymous"></script>
+  <title>My Website</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>C</span>ollege <span>N</span>etwork</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#services" data-after="Service">Resources</a></li>
+            <li><a href="#projects" data-after="Projects">Blog</a></li>
+            <li><a href="#about" data-after="About">Featured Stories & events</a></li>
+            <!-- <li><a href="index.html" data-after="Contact">Log Out</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section class="scrollable">
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <body>
+        <div class="iconbody">
+          <menu class="open">
+            <a href="signin.html" class="action"><i class="fas fa-sign-out-alt"></i></a>
+            <a href="http://localhost/student_attendance/index.php?page=home" class="action"><i class="fas fa-chalkboard-teacher"></i></a>
+            <a href="http://localhost/feedback/" class="action"><i class="fas fa-comment-alt"></i></a>
+            <a href="http://localhost/webdev/" class="action"><i class="fas fa-comments"></i></a>
+            <a href="#" class="trigger"><i class="fas fa-plus"></i></a>
+          </menu>
+          
+          
+          <script>
+            const trigger = document.querySelector("menu > .trigger");
+            trigger.addEventListener('click', (e) => {
+              e.currentTarget.parentElement.classList.toggle("open");
+            });
+          </script>
+        </div>
+      
+      <div class="parent">
+        <div><h1>College <span></span></h1>
+        <!-- <h1>Network <span></span></h1> -->
+        <h1>Network<span></span></h1>
+        <!-- <p>Keep looking up</p> -->
+        <a href="http://localhost/webdev/" type="button" class="cta">Start Connecting</a></div>
+        <div><img src="photos/undraw_connecting_teams_re_hno7.svg" class="parentimg"alt=""></div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- Service Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">Reso<span>u</span>rces</h1>
+        <p>This section of the website will generally contain three sub sections Question papers, Notes, and Textbooks. Any user
+        who want to gain access to the Notes or any textbook will need to navigate through this section.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- End Service Section -->
+<div class="card_body">
+  <div class="container">
+    <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.3">
+      <div class="content">
+        <h2>Q</h2>
+        <h3>Question Papers</h3>
+        <p>This section will contain question paper from the respective colleges anyone want to gain access.</p>
+        <a href="modalq.html">Click here</a>
+        
+      </div>
+    </div>
+    <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.3">
+      <div class="content">
+        <h2>T</h2>
+        <h3>Textbooks</h3>
+        <p>All the textbooks for the respective academical semester will be available in this section.</p>
+        <a href="modalt.html">Click here</a>
+      </div>
+    </div>
+    <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.3">
+      <div class="content">
+        <h2>N</h2>
+        <h3>Notes</h3>
+        <p>This section will contain college notes anyone want to upload or download on and from the LMS.</p>
+        <a href="modaln.html">Click here</a>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+  <script>
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+      max: 25,
+      speed: 400
+    });
+  </script>
+</div>
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">B<span>log</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Blog 1</h1>
+            <h2>Vital Part of our Life</h2>
+            <p>Regularly evolving technology has become an important part of our lives. Also, newer technologies are taking the market
+            by storm and the people are getting used to them in no time. Above all, technological advancement has led to the growth
+            and development of nations.</p>
+          </div>
+          <div class="project-img">
+            <img src="photos/blog1.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Blog 2</h1>
+            <h2>Technology – A Boon or Bane?</h2>
+            <p>Experts are debating on this topic for years. Also, the technology covered a long way to make human life easier but the
+            negative aspect of it can’t be ignored. Over the years technological advancement has caused a severe rise in pollution.
+            Also, pollution has become a major cause of many health issues. Besides, it has cut off people from society rather than
+            connecting them. Above all, it has taken away many jobs from the workers class.</p>
+          </div>
+          <div class="project-img">
+            <img src="photos/blog2.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Blog 3</h1>
+            <h2>UI/UX</h2>
+            <p>With the technological advancement in the 21st-century, everybody wants to experience the best technology without
+            spending too much of their time and exhausting their busy brains. The same goes for surfing the websites or mobile
+            applications as well where the quick and efficient the website or the mobile application responds, the successful
+            outcomes it obtains. In short, it is about the consumers nowadays! And, when it comes to the mobile application or
+            website user satisfaction, most technology firms turn towards the applications’ User Interface (UI) and User Experience
+            Design (UX). However, most the time people confuse between the terms UI and UX. Therefore, we are here to decode the
+            concept of UI and UX design!</p>
+          </div>
+          <div class="project-img">
+            <img src="photos/blog3.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Blog 4</h1>
+            <h2>Web servers</h2>
+            <p>A Web server is a specific computer, in which carries servers are where websites are engraved in HTML ( Hyper text
+            mark-up language). The use for a web server is when a user tries to enter a website using a URL address such as
+            www.bing.co.uk. When it works the server will then bring up the website that the user requested. The use of web servers
+            is so that every computer is able to retrieve any web pages, the computer is connected to the server by the internet
+            connection and that will allow the internet to be flown to the computer when you type in a URL address. So when someone
+            published a web site it will be send to the server allowing every computer to access that website.</p>
+          </div>
+          <div class="project-img">
+            <img src="photos/Blog4.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <!-- <h1>Blog 5</h1>
+            <h2>Coding is Love</h2> -->
+            <p>Click below to read more such blogs and write your Own!</p>
+            <br>
+              <a href="blog.html">Click here<!DOCTYPE html>
+              <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+              <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+              <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+              <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+              <html>
+                <head>
+                  <meta charset="utf-8">
+                  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                  <title></title>
+                  <meta name="description" content="">
+                  <meta name="viewport" content="width=device-width, initial-scale=1">
+                  <link rel="stylesheet" href="">
+                </head>
+                <body>
+                  <!--[if lt IE 7]>
+                    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+                  <![endif]-->
+                  
+                  <script src="" async defer></script>
+                </body>
+              </html></a>
+          </div>
+          <div class="project-img">
+            <img src="photos/blog5.jpg" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="photos/concert.jpg" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">Featured stories<span> & </span>Events</h1>
+        <!-- <h2>Lorem ipsum doler sit amet</h2> -->
+        <p>This section of the website contains the events and functions that are gonna happen in the respective colleges of the
+        users so that they will get notified about the calendar events beforehand.</p>
+          <p>Students will be tagged in the events regarding all the news and updates about the following events organized by any
+          club or college itself. These events can be any kind of fests, festivities meet, alumni connects, club events, cultural
+          competitions, exams, etc.</p>
+
+            <a href="Evenst section\index.html">Click here</a>
+
+          <!-- <section id="contact">
+            <div class="contact container">
+              <div>
+                <h1 class="section-title">Contact <span>info</span></h1>
+              </div>
+              <div class="contact-items">
+                <div class="contact-item">
+                  <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+                  <div class="contact-info">
+                    <h1>Topic 1</h1>
+                    <h2>Lorem ipsum doler</h2>
+                    <h2>Lorem ipsum doler</h2>
+                    <a href="#" class="cta">Click here</a>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+                  <div class="contact-info">
+                    <h1>Topic 2</h1>
+                    <h2>Lorem ipsum doler</h2>
+                    <h2>Lorem ipsum doler</h2>
+                    <a href="#" class="cta">Click here</a>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+                  <div class="contact-info">
+                    <h1>Topic 3</h1>
+                    <h2>Lorem ipsum doler</h2>
+                    <h2>Lorem ipsum doler</h2>
+                    <a href="#" class="cta">Click here</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+         -->
+      </div>
+      
+    </div>
+    
+  </section>
+  <!-- End About Section -->
+
+  <!-- Contact Section -->
+  
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <!-- <h1><span>F</span>oo<span>ter</span></h1> -->
+      </div>
+      <ul class=list>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="privacy terms.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+      </ul>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+        </div>
+      </div>College Network
+      <p>Copyright © 2021 . All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+</body>
+
+</html>

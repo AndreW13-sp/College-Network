@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="modal.css">
+  <link rel="stylesheet" href="drop.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- <div><img src="photos/undraw_selected_options_re_vtjd.svg"  alt=""></div> -->
+    <div><img src="photos/undraw_book_lover_re_rwjy.svg" class="parentimg" alt=""></div>
+    <a href="#modalbox">Choose</a>
+  </div>
+  <div id="modalbox" class="modal">
+    <div class="modalcontent">
+      <h1>Filter Resources</h1>
+      
+      <a href="#" class="modalclose">&times;</a>
+      <div class="container_d">
+        <div class="f-group">
+          
+          <label for="">Year</label>
+          <select name="slct1" id="slct1" onchange="populate(this.id,'slct2')">
+            <option value="">-- Select Year --</option>
+            <option value="firsty">First Year</option>
+            <option value="secondy">Second Year</option>
+            <option value="thirdy">Third Year</option>
+            <option value="fourthy">Fourth Year</option>
+          </select>
+        </div>
+        <div class="f-group">
+          <label for="">Subject</label>
+          <select name="slct2" id="slct2" onchange="javascript:location.href = this.value;">
+      
+          </select>
+        </div>
+      </div>
+      
+      <script>
+        function populate(s1, s2) {
+          var s1 = document.getElementById(s1);
+          var s2 = document.getElementById(s2);
+
+          s2.innerHTML = "";
+          if (s1.value == "firsty") {
+            var optionArray = ['sl|--Select Subject--', 'https://drive.google.com/drive/folders/18vJ8quiJeQhUsNnZBdO71QywEpstzLqB?usp=sharing|Engineering Mathematics', 'https://drive.google.com/drive/folders/17IfAiFtO91N9WZXHX8peVfhIhoPNVP2h?usp=sharing|Engineering Physics', 'https://drive.google.com/drive/folders/10f2c6Aah21dHzz40a4L9PVOZlvr0_LVD?usp=sharing|Engineering Chemistry', 'https://drive.google.com/drive/folders/1LwQCc_Twm-GcJYZk77iSMi5lHYi4VwRh?usp=sharing|Engineering Graphics', 'https://drive.google.com/drive/folders/1e-lhqYJ1G6GJNsC6zQLbxUIBcezcT7oP?usp=sharing|Engineering Mechanics', 'https://drive.google.com/drive/folders/1IZXd-CT3TtUinrKufRRhPQZkSaZixilt?usp=sharing|C Programming', 'https://drive.google.com/drive/folders/1adQtXeDce7vGHNDnpi5vuJvjNcyyyyoB?usp=sharing|Basic Electrical Engineering', 'https://drive.google.com/drive/folders/1u_drZpN9KAzyIU_9wITGVfHnYZ5NljaE?usp=sharing|English for Engineers'];
+          }
+          else if (s1.value == 'secondy') {
+            var optionArray = ['sl|--Select Subject--', 'https://drive.google.com/drive/folders/1AvvGmztPyIyzxYTd7IfDX7KcwPXlshFb?usp=sharing|DBMS', 'https://drive.google.com/drive/folders/1TjyX_qEYSzsa1Nf4cWEvSLCckKJp8m_p?usp=sharing|Data Structure', 'https://drive.google.com/drive/folders/1f7aMZY2ujqxdWoLzX00LJOVHpoR3Z94h?usp=sharing|COA', 'https://drive.google.com/drive/folders/1lHwf16sXMQ6gSkfmu3XgPgLeKiUfdc2Y?usp=sharing|Engineering Mathematics', 'https://drive.google.com/drive/folders/1DC0Btdm7p_MXGTE0yTjQshT61gmLZcqJ?usp=sharing|BELD', 'https://drive.google.com/drive/folders/1WkAHpKqoqfgogbyr8UzBR9A6dYv307ex?usp=sharing|OOPM'];
+
+          }
+
+          else if (s1.value == 'thirdy') {
+            var optionArray = ['sl|--Select Subject--', 'https://drive.google.com/drive/folders/10zSpIj3c7kTMzfnJDzvc2-S74DqwHg8A?usp=sharing|Computer Network', 'https://drive.google.com/drive/folders/1REZ7FyqV7gQ2hfl9rajvR70K9bCh9ftU?usp=sharing|Dataware house mining', 'https://drive.google.com/drive/folders/1mPtwDyWX_eQhPWkNgdNk5s6tPco8SKRZ?usp=sharing|DL01','https://drive.google.com/drive/folders/1YydwEHLzt5KJ5Va06IQN5_sZAhysBiAG?usp=sharing|DL02', 'https://drive.google.com/drive/folders/1-Fucb5nKZvmsZMabEoovQZmV17f8re-1?usp=sharing|DL03', 'https://drive.google.com/drive/folders/1COM_kO1ntFHMieg47hznakJpNfE-Ks54?usp=sharing|DL04', 'https://drive.google.com/drive/folders/1aT6WaiCJO6qpq5PetWf9yFdAIZTqtceq?usp=sharing|ILON1', 'https://drive.google.com/drive/folders/19ke7tTfd3un1UiJLYHdFO96XrbPMXVYM?usp=sharing|ILON 2', 'https://drive.google.com/drive/folders/1wH6UThFv5LoG-vBJ2JPTyLGJc1ivP_Kn?usp=sharing|Internet Programming', 'https://drive.google.com/drive/folders/1RV3FR6tR_dlvtLlN3sN141g3vfDt9SuH?usp=sharing|Machine Learning','https://drive.google.com/drive/folders/1UxICW5zix2TLxC12K15jj_PiEeuNz7Cb?usp=sharing|Professional Communication', 'https://drive.google.com/drive/folders/1dmhREtXmVl--2DhASYdGOjgft4LZCUdz?usp=sharing|Skilled Based - Python', 'https://drive.google.com/drive/folders/1BThPwLln81GblPL2QOyMAOqTb4ZCdsqF?usp=sharing|Skilled Based - DEVS', 'https://drive.google.com/drive/folders/1JXCsRX_nEL86LjSXC-wge7fh2rNMoh4a?usp=sharing|Software Engineering','https://drive.google.com/drive/folders/1wAvKSdC7Ec3eRDFhoAcAPT3ZFTpblD1W?usp=sharing|Theoritical Computer Science'];
+
+          }
+
+          else if (s1.value == 'fourthy') {
+            var optionArray = ['sl|--Select Subject--', 'https://drive.google.com/drive/folders/1H5glLBUzpccMSYSlzAIXF8l7MFbArWj4?usp=sharing|DL05', 'https://drive.google.com/drive/folders/19PyuWEtkhCwhuuRNlG7bzy5gfpcsifs4?usp=sharing|DL06','https://drive.google.com/drive/folders/1CeIVspqXNoORy7tvUXE17EqlloUDroa6?usp=sharing|High Performance Computing', 'https://drive.google.com/drive/folders/1G_BtRZDv9WXLh-meMvmATdmY3ak4gbho?usp=sharing|ILON 2', 'https://drive.google.com/drive/folders/1g_THG-rRQRcSJqA52UMkGMnBNOFTUZcN?usp=sharing|Project Internship','https://drive.google.com/drive/folders/1H1CxVKK6rAf6zZkkNnyx_3KeEZEbBZ0W?usp=sharing|Skilled based - Cloud Comp'];
+
+          }
+
+          for (var option in optionArray) {
+            var pair = optionArray[option].split("|");
+            var newoption = document.createElement("option");
+            newoption.value = pair[0];
+            newoption.innerHTML = pair[1];
+            s2.options.add(newoption);
+          }
+        }
+      </script>
+    </div>
+  </div>
+</body>
+</html>

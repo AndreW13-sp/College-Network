@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 4em;
+  color: white;
+} */
+
+body .parallax_wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 300px;
+          perspective: 300px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* body .parallax_wrapper .intro_screen {
+  height: 100vh;
+  background-color: #ff2b2b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+} */
+
+/* body .parallax_wrapper .outro_screen {
+  height: 100vh;
+  background-color: teal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+} */
+
+body .parallax_wrapper .parallax_group {
+  position: relative;
+  height: 100vh;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+body .parallax_wrapper .parallax_group .parallax_layer {
+  position: absolute;
+  inset: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .parallax_wrapper .parallax_group .base_layer {
+  -webkit-transform: translateZ(-300px) scale(2);
+          transform: translateZ(-300px) scale(2);
+}
+
+body .parallax_wrapper .parallax_group .para {
+  font-size: medium;
+  padding: 1cm;
+}
+
+body .parallax_wrapper .parallax_group .mid_layer {
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
+body .parallax_wrapper .parallax_group .top_layer {
+  -webkit-transform: translateZ(210px) scale(0.3);
+          transform: translateZ(210px) scale(0.3);
+}
+
+body .parallax_wrapper #intro {
+  z-index: 0;
+}
+
+body .parallax_wrapper #group1 {
+  z-index: -1;
+}
+
+body .parallax_wrapper #group1 > .base_layer {
+  background: rgb(167,190,190);
+background: linear-gradient(180deg, rgba(167,190,190,1) 0%, rgba(255,255,255,1) 32%, rgba(255,255,255,1) 100%);
+}
+
+body .parallax_wrapper #group2 > .mid_layer {
+ background: linear-gradient(360deg, #161623 0%, #161623 35.36%, #FFFFFF 101.3%, #FFFFFF 101.31%, #FFFFFF 101.32%, #FFFFFF 101.33%);
+
+}
+/*# sourceMappingURL=main.css.map */

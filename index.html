@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="cards.css">
+  <link rel="stylesheet" href="landing.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="parallax_wrapper">
+    <div class="parallax_group intro_screen" id="intro">
+      <div class=landing_body>
+        <section>
+          <header>
+            <a href="#" class="logo">CN</a>
+            <div class="toggle" onclick="menuToggle();"></div>
+          </header>
+          <div class="glass"></div>
+          <div class="content">
+            <h2>College Network...<br><span>Eventually everything connects.</span>
+            </h2>
+        
+          </div>
+          <video src="video/wavy.mp4" autoplay muted loop></video>
+          <ul class="sci">
+            <li style="--i:1"><a href="signin.html">Start Connecting</a></li>
+          </ul>
+          <ul class="navigation">
+            <li>
+              <a href="port.html">Home</a>
+            </li>
+            <!-- <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li> -->
+            <li>
+              <a href="signin.html">Login</a>
+            </li>
+          </ul>
+        </section>
+        
+        <script src="landing.js"></script>
+        
+        </html>
+      </div>
+    </div>
+    <!-- <div class="parallax_group" id="group1">
+      <div class="parallax_layer base_layer">
+
+      </div>
+      <div class="parallax_layer mid_layer">
+        
+      </div>
+    </div> -->
+    <!-- <div class="parallax_group" id="group2">
+      <div class="parallax_layer mid_layer">
+      </div>
+      <div class="parallax_layer top_layer">
+        
+      </div>
+    </div> -->
+    <div class="parallax_group outro_screen" id="outro">
+      <div class="card_body">
+        <div class="container">
+          <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.3">
+            <div class="content">
+              <h2>01</h2>
+              <h3>About Us</h3>
+              <p>Welcome to College Network Connection (CN), your Number One or you can say the Only One source for your useful stuff &
+              needs whether it may be your private academic Learning Management System (LMS), or Social Media Platform...</p>
+              <a href="aboutus.html">Read More</a>
+            </div>
+          </div>
+          <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.3">
+            <div class="content">
+              <h2>02</h2>
+              <h3>Contact Us</h3>
+              <p>Get in touch with us..</p>
+              <a href="contact.html">Click here</a>
+            </div>
+          </div>
+          <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.3">
+            <div class="content">
+              <h2>02</h2>
+              <h3>FAQs</h3>
+              <p>Some frequently asked questions..</p>
+              <a href="faq.html">Read More</a>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="vanilla-tilt.js"></script>
+        <script>
+          VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400});
+        </script></div>
+    </div>
+  </div>
+</body>
+</html>

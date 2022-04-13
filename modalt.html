@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="modal.css">
+  <link rel="stylesheet" href="drop.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div><img src="photos/undraw_book_lover_re_rwjy.svg" class="parentimg" alt=""></div>
+    <a href="#modalbox">Choose</a>
+  </div>
+  <div id="modalbox" class="modal">
+    <div class="modalcontent">
+      <h1>Filter Resources</h1>
+
+      <a href="#" class="modalclose">&times;</a>
+      <div class="container">
+        <div class="f-group">
+          <label for="">Year</label>
+          <select name="slct1" id="slct1" onchange="populate(this.id,'slct2')">
+            <option value="">-- Select Year --</option>
+            <option value="firsty">First Year</option>
+            <option value="secondy">Second Year</option>
+            <option value="thirdy">Third Year</option>
+            <option value="fourthy">Fourth Year</option>
+          </select>
+        </div>
+        <div class="f-group">
+          <label for="">Subject</label>
+          <select name="slct2" id="slct2" onchange="javascript:location.href = this.value;">
+      
+          </select>
+        </div>
+      </div>
+      
+      <script>
+        function populate(s1, s2) {
+          var s1 = document.getElementById(s1);
+          var s2 = document.getElementById(s2);
+
+          s2.innerHTML = "";
+          if (s1.value == "firsty") {
+            var optionArray = ['sl|--Select Subject--', 'https://drive.google.com/drive/folders/1xiYcX5Wf6yg-7zA52rLAKOI7c4KNDChl?usp=sharing|Engineering Mathematics', 'https://drive.google.com/drive/folders/1XdduLd8MhEL_IrIFtqRiKOM8cnoPXSIL?usp=sharing|Engineering Physics', 'https://drive.google.com/drive/folders/1UvzuEQF95zhtrKgQk_g2yT-fiSVuyYGN?usp=sharing|Engineering Chemistry', 'https://drive.google.com/drive/folders/1CW5jfyKsdXFFrRONu7eyOqFaOzxz36sP?usp=sharing|Engineering Graphics', 'https://drive.google.com/drive/folders/1kU1B4aPTZbKJYIIGwO2FamUE5XBQLsND?usp=sharing|Engineering Mechanics', 'https://drive.google.com/drive/folders/189_iFYpcJbWylDThJGxr3aAHRt57Pyxe?usp=sharing|C Programming', 'https://drive.google.com/drive/folders/1iJT_4ciVVYkI7OkcWOQnmgpXwAHrrWXF?usp=sharing|Basic Electrical Engineering', 'https://drive.google.com/drive/folders/1GqSRbhRaIWdUX2wN6V9Wdo_yGOT6yRTn?usp=sharing|English for Engineers'];
+          }
+          else if (s1.value == 'secondy') {
+            var optionArray = ['sl|--Select Subject--', 'https://drive.google.com/drive/folders/14VUq4W2WVBxFg7e5vfMEcgy54zTFtD1X?usp=sharing|DBMS', 'https://drive.google.com/drive/folders/1DV0bWx70eQh2nfjKo-lBShz8Fvw1Hem5?usp=sharing|Data Structure', 'https://drive.google.com/drive/folders/1Bf8zgQ1n1zS5pWFGew73HYiBqo59CoQf?usp=sharing|COA', 'https://drive.google.com/drive/folders/1cWDOXnzNOgrymRL2yjw7xHBZCLGbrocL?usp=sharing|Engineering Mathematics', 'https://drive.google.com/drive/folders/1kWTmYskUj0yatuOmXdlJ8aXZbv4AeS_3?usp=sharing|BELD', 'https://drive.google.com/drive/folders/1ok9iBiCoL_DxvWaYDGqepAVkr1ZbjrgW?usp=sharing|OOPM'];
+          }
+
+          else if (s1.value == 'thirdy') {
+            var optionArray = ['sl|--Select Subject--','https://drive.google.com/drive/folders/1qt0BB7sYpEJf8DE1zVrfnR8zL8TmQgG6?usp=sharing|Computer Network', 'https://drive.google.com/drive/folders/12eWPoQIurc-8y-aSa-pbQeUvGvl_yDB5?usp=sharing|Dataware house mining', 'https://drive.google.com/drive/folders/1srO1YNQCKT54gYMCWfQBW3OlrmcmZI_4?usp=sharing|DL01', 'https://drive.google.com/drive/folders/1v_aV6l6B2WHVcmIlzv-iQKHRJHjZbtIo?usp=sharing|DL02', 'https://drive.google.com/drive/folders/1lIMFwmcu9f8ra4GlBGhNlldBrhkg6QW6?usp=sharing|DL03','https://drive.google.com/drive/folders/1BqfSPYZMlXGcidMkki57NqqBCc4-D49x?usp=sharing|DL04','https://drive.google.com/drive/folders/1sRemUuXJ1iSZ3ni1UKWIvJtiI0k08niX?usp=sharing|ILON1', 'https://drive.google.com/drive/folders/1gKzouh4Ibakceat4v3UGzdSI6CvAljVK?usp=sharing|ILON 2', 'https://drive.google.com/drive/folders/1ZrSZY5LgqmeHl_Ychz6rELjxRQxSgb6R?usp=sharing|Internet Programming', 'https://drive.google.com/drive/folders/1CzeLhE3V3gRsi7ATYGmIGnCF4GY3q_8p?usp=sharing|Machine Learning', 'https://drive.google.com/drive/folders/1OrSmBAFG8-utCJzjBtuNkSDQ6e0affvl?usp=sharing|Professional Communication','https://drive.google.com/drive/folders/1H43cV4rzTPit_69jJe-WfIskkwQVy9y1?usp=sharing|Skilled Based - Python', 'https://drive.google.com/drive/folders/1sgvZzKyW2JBUCYUZrfpwOew0SldE84Si?usp=sharing|Skilled Based - DEVS', 'https://drive.google.com/drive/folders/1Ng8XBZTRGkUkSQ-l4Hc3NN0x_t1Q4jBE?usp=sharing|Software Engineering','https://drive.google.com/drive/folders/1J_KEXs4W4Pf1KYCdG-9z6fp1-Sg1sHoR?usp=sharing|Theoritical Computer Science'];
+
+          }
+
+          else if (s1.value == 'fourthy') {
+            var optionArray = ['sl|--Select Subject--', 'https://drive.google.com/drive/folders/14niyijYfViHAsyZcnTbq8RhnWklDusNd?usp=sharing|DL05', 'https://drive.google.com/drive/folders/1VWLC1T8377TB2r0og-IIIV2NOnea59N2?usp=sharing|DL06','https://drive.google.com/drive/folders/1kH96-C2suP_f6_LCoYoFzFd9Ws0X5A1T?usp=sharing|High Performance Computing','https://drive.google.com/drive/folders/1e-hUCG8mASZV9HAFqthbPvw7W5IDVQrP?usp=sharing|ILON 2','https://drive.google.com/drive/folders/18rAcT55WowT7xWQ5jTrPnt0vdAHhB6ms?usp=sharing|Project Internship','https://drive.google.com/drive/folders/18os8ZtfJn5IavNwCI0FodfLT3w31dtQB?usp=sharing|Skilled based - Cloud Comp'];
+
+          }
+
+          for (var option in optionArray) {
+            var pair = optionArray[option].split("|");
+            var newoption = document.createElement("option");
+            newoption.value = pair[0];
+            newoption.innerHTML = pair[1];
+            s2.options.add(newoption);
+          }
+        }
+      </script>
+    </div>
+  </div>
+</body>
+
+</html>

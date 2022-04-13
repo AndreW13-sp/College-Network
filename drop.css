@@ -1,0 +1,26 @@
+.container{
+  display: flex;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.f-group{
+  float: left;
+}
+
+.f-group label{
+  display: flex;
+  margin-bottom: 8px;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 500;
+}
+
+select{
+  border: 1px solid #fff ;
+  background-color: #fd5d6a;
+  color: #fff;
+  height: 100 px;
+  width: 200px;
+  padding:0 15px;
+  margin-right: 20px;
+}

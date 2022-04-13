@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=
+  , initial-scale=1.0">
+  <link rel="stylesheet" href="drop.css">
+  <title>Document</title>
+</head>
+<div class="container">
+  <div class="f-group">
+    <label for="">Year</label>
+    <select name="slct1" id="slct1" onchange="populate(this.id,'slct2')">
+      <option value="">-- Select Year --</option>
+      <option value="firsty">First Year</option>
+      <option value="secondy">Second Year</option>
+      <option value="thirdy">Third Year</option>
+      <option value="fourthy">Fourth Year</option>
+    </select>
+  </div>
+  <div class="f-group">
+    <label for="">Subject</label>
+    <select name="slct2" id="slct2" onchange="javascript:location.href = this.value;">
+
+    </select>
+  </div>
+</div>
+
+<script>
+  function populate(s1, s2) {
+    var s1 = document.getElementbyId(s1);
+    var s2 = document.getElementbyId(s2);
+
+    s2.innerHTML = "";
+    if (s1.value == "firsty") {
+      var optionArray = ['sl|--Select Subject--', 'https://drive.google.com/drive/folders/1xiYcX5Wf6yg-7zA52rLAKOI7c4KNDChl?usp=sharing|Engineering Mathematics', 'https://drive.google.com/drive/folders/1XdduLd8MhEL_IrIFtqRiKOM8cnoPXSIL?usp=sharing|Engineering Physics', 'https://drive.google.com/drive/folders/1UvzuEQF95zhtrKgQk_g2yT-fiSVuyYGN?usp=sharing|Engineering Chemistry', 'https://drive.google.com/drive/folders/1CW5jfyKsdXFFrRONu7eyOqFaOzxz36sP?usp=sharing|Engineering Graphics', 'https://drive.google.com/drive/folders/1kU1B4aPTZbKJYIIGwO2FamUE5XBQLsND?usp=sharing|Engineering Mechanics', 'https://drive.google.com/drive/folders/189_iFYpcJbWylDThJGxr3aAHRt57Pyxe?usp=sharing|C Programming', 'https://drive.google.com/drive/folders/1iJT_4ciVVYkI7OkcWOQnmgpXwAHrrWXF?usp=sharing|Basic Electrical Engineering', 'https://drive.google.com/drive/folders/1GqSRbhRaIWdUX2wN6V9Wdo_yGOT6yRTn?usp=sharing|English for Engineers'];
+    }
+    else if (s1.value == 'secondy') {
+      var optionArray = ['sl|--Select Subject--','https://drive.google.com/drive/folders/14VUq4W2WVBxFg7e5vfMEcgy54zTFtD1X?usp=sharing|DBMS', 'https://drive.google.com/drive/folders/1DV0bWx70eQh2nfjKo-lBShz8Fvw1Hem5?usp=sharing|Data Structure', 'https://drive.google.com/drive/folders/1Bf8zgQ1n1zS5pWFGew73HYiBqo59CoQf?usp=sharing|COA', 'https://drive.google.com/drive/folders/1cWDOXnzNOgrymRL2yjw7xHBZCLGbrocL?usp=sharing|Engineering Mathematics', 'https://drive.google.com/drive/folders/1kWTmYskUj0yatuOmXdlJ8aXZbv4AeS_3?usp=sharing|BELD', 'https://drive.google.com/drive/folders/1ok9iBiCoL_DxvWaYDGqepAVkr1ZbjrgW?usp=sharing|OOPM'];
+    }
+
+    for (var option in optionArray) {
+      var pair = optionArray[option].split("|");
+      var newoption = document.createElement("option");
+      newoption.value = pair[0];
+      newoption.innerHTML = pair[1];
+      s2.options.add(newoption);
+    }
+  }
+</script>
